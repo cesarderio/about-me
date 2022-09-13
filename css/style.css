@@ -1,6 +1,22 @@
 body {
-  background-color: rgb(138, 138, 247);
+  text-align: center;
+  align-self: center;
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;
+  background-color: rgba(83, 178, 164, 0.557);
 }
 h1 {
+  text-align: center;
   font-size:5vw;
+}
+
+p {
+  
+ 
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;
+  padding: auto;
+  max-width: 900px;
 }

@@ -3,11 +3,11 @@
 console.log('hey world');
 
 let userName = prompt('What is your name?');
-
+/* console.log(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`); */
 alert(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`);
 
 let questionOne = prompt('Do I have a dog?').toLowerCase();
-
+// console.log(`That's right ${userName}!`); //
 if(questionOne === 'y' || questionOne === 'yes') {
   alert(`That's right ${userName}!`);
 } else if(questionOne === 'n' || questionOne === 'no') {
@@ -15,7 +15,7 @@ if(questionOne === 'y' || questionOne === 'yes') {
 }
 
 let questionTwo = prompt(`Was I born in the United States ${userName}?`).toLowerCase();
-
+/* console.log(`You are not paying attention ${userName}!`); */
 if(questionTwo === 'y' || questionTwo === 'yes') {
   alert(`You are not paying attention ${userName}!`);
 } else if(questionTwo === 'n' || questionTwo === 'no') {
@@ -24,7 +24,7 @@ if(questionTwo === 'y' || questionTwo === 'yes') {
 
 
 let questionThree = prompt(`Is English my first language ${userName}?`).toLowerCase();
-
+/* console.log(`You might want to read my biography again ${userName}!` */
 if(questionThree === 'y' || questionThree === 'yes') {
   alert(`You might want to read my biography again ${userName}!`);
 } else if(questionThree === 'n' || questionThree === 'no') {
@@ -32,7 +32,7 @@ if(questionThree === 'y' || questionThree === 'yes') {
 }
 
 let questionFour = prompt(`Have I been outside the United States ${userName}?`).toLowerCase();
-
+// console.log(`That is right ${userName}!`); //
 if(questionFour === 'y' || questionFour === 'yes') {
   alert(`That is right ${userName}!`);
 } else if(questionFour === 'n' || questionFour === 'no') {
@@ -40,7 +40,7 @@ if(questionFour === 'y' || questionFour === 'yes') {
 }
 
 let questionFive = prompt(`Do I work with cameras ${userName}?`).toLowerCase();
-
+// console.log(`You are paying attention ${userName}!`); //
 if(questionFive === 'y' || questionFive === 'yes') {
   alert(`You are paying attention ${userName}!`);
 } else if(questionFive === 'n' || questionFive === 'no') {
