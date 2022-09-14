@@ -46,3 +46,30 @@ if(questionFive === 'y' || questionFive === 'yes') {
 } else if(questionFive === 'n' || questionFive === 'no') {
   alert(`That is not correct ${userName}!`);
 }
+
+let myNum = 7;
+
+let questionSix = prompt('Guess a number between 1-20');
+
+for(i=0;i<5;i++){
+  if(questionSix == myNum){
+    alert(`You guessed correctly ${userName}!`);
+    break;
+  } else if(questionSix < myNum){
+    alert(`Your guess is too low ${userName}. Try again`);
+  } else(question > myNum){
+    alert(`Your guess is too high ${userName}! Try Again`);
+  }
+}
+
+// *TOP* let score = 0; //
+
+// alert('you are correct'); //
+// score++; //
+
+// alert(1`${score}`); //
+
+
+
+
+
