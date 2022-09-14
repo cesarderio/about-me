@@ -4,7 +4,8 @@ body{
 p {
   text-align: center;
   align-self: center;
-  display: block;  
+  display: block; 
+  margin-top: 40px;
   margin-left: auto;  
   margin-right: auto;
   border: 70px, 70px; 
@@ -19,3 +20,21 @@ h1 {
 div {
   margin: 50px 50px;
 }
+
+li {
+  margin-top: 10px;
+}
+ul {
+  list-style-type: circle;
+}
+ol {
+  list-style-type: decimal;
+}
+.expr {
+  float: left;
+ 
+}
+.Artists {
+  float: right;
+}
+
