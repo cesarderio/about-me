@@ -12,7 +12,7 @@ if(questionOne === 'y' || questionOne === 'yes') {
   alert(`That's right ${userName}!`);
 } else if(questionOne === 'n' || questionOne === 'no') {
   alert(`Sorry ${userName}, that is wrong.`);
-}
+} 
 
 let questionTwo = prompt(`Was I born in the United States ${userName}?`).toLowerCase();
 /* console.log(`You are not paying attention ${userName}!`); */
@@ -47,26 +47,49 @@ if(questionFive === 'y' || questionFive === 'yes') {
   alert(`That is not correct ${userName}!`);
 }
 
-let myNum = 7;
-
+let myNum = '7';
 let questionSix = prompt('Guess a number between 1-20');
 
-for(i=0;i<5;i++){
-  if(questionSix == myNum){
+for(let i=0;i<4;i++){
+  if(questionSix === myNum){
     alert(`You guessed correctly ${userName}!`);
+    break;
   } else if(questionSix < myNum){
     alert(`Your guess is too low ${userName}. Try again`);
-  } else(question > myNum){
+    questionSix = prompt('Guess a number between 1-20');
+  } else{
     alert(`Your guess is too high ${userName}! Try Again`);
+    questionSix = prompt('Guess a number between 1-20');
   }
 }
+let score = 0;
 
-// *TOP* let score = 0; //
 
-// alert('you are correct'); //
-// score++; //
+let myFavorite = ['pizza', 'snacks', 'brunch'];
+let guesses = 6;
+let questionSeven = '';
+let isCorrect = false;
+for(let i = 0;i<6;i++){
+  questionSeven = prompt('Guess what my favorite kind of food is.');
+  for(let j=0;j< myFavorite.length;j++){
 
-// alert(1`${score}`); //
+    if(questionSeven === myFavorite[j]){
+      isCorrect = true;
+      score++;
+      i = 6; // changing 'i' to 6 so we exit 'for' loop //
+    }
+  } 
+  if(isCorrect === false){
+    alert("Sorry you're wrong");
+  }
+}
+if(isCorrect === false){
+  alert('These are the possible answers: pizza, snacks or brunch');
+} else{
+  alert(`That's right ${userName}!`);
+}
+
+alert(1`${score}`);
 
 
 
