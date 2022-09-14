@@ -54,7 +54,6 @@ let questionSix = prompt('Guess a number between 1-20');
 for(i=0;i<5;i++){
   if(questionSix == myNum){
     alert(`You guessed correctly ${userName}!`);
-    break;
   } else if(questionSix < myNum){
     alert(`Your guess is too low ${userName}. Try again`);
   } else(question > myNum){
