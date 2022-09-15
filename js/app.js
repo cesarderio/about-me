@@ -87,20 +87,23 @@ function questionSix(){
   console.log(myNum);
   let questionSix = +prompt('Guess a number between 1-20');
   //console.log(questionSix);
-  for(let i=0;i<4;i++){
+  for(let i=0;i<3;i++){
     if(questionSix === myNum){
       alert(`You guessed correctly ${userName}!`);
       score++;
       break;
     } else if(questionSix < myNum){
       alert(`Your guess is too low ${userName}. Try again`);
-      questionSix = +prompt('Guess a number between 1-20');
     } else{
       alert(`Your guess is too high ${userName}! Try Again`);
-      questionSix = +prompt('Guess a number between 1-20');
-    }
+    } 
+    questionSix = +prompt('Guess a number between 1-20');
   }
 }
+
+/* questionSix === myNum ? alert(`You guessed correctly ${userName}!`) 
+: questionSix < myNum ? `Your guess is too low ${userName}. Try again` 
+: `Your guess is too high ${userName}! Try Again`; */
 
 questionSix();
 
