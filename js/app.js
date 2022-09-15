@@ -51,8 +51,8 @@ if(questionFive === 'y' || questionFive === 'yes') {
   questionFive = prompt(`Do I work with cameras ${userName}?`);
 }
 
-let myNum = '7';
-let questionSix = prompt('Guess a number between 1-20');
+let myNum = 7;
+let questionSix = +prompt('Guess a number between 1-20');
 
 for(let i=0;i<4;i++){
   if(questionSix === myNum){
