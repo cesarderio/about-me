@@ -1,6 +1,7 @@
 'user strict';
 
 console.log('hey world');
+let score = 0;
 
 let userName = prompt('What is your name?');
 /* console.log(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`); */
@@ -45,6 +46,9 @@ if(questionFive === 'y' || questionFive === 'yes') {
   alert(`You are paying attention ${userName}!`);
 } else if(questionFive === 'n' || questionFive === 'no') {
   alert(`That is not correct ${userName}!`);
+} else{
+  alert(`Please answer the question ${userName}.`);
+  questionFive = prompt(`Do I work with cameras ${userName}?`);
 }
 
 let myNum = '7';
@@ -62,7 +66,7 @@ for(let i=0;i<4;i++){
     questionSix = prompt('Guess a number between 1-20');
   }
 }
-let score = 0;
+
 
 
 let myFavorite = ['pizza', 'snacks', 'brunch'];
@@ -89,7 +93,7 @@ if(isCorrect === false){
   alert(`That's right ${userName}!`);
 }
 
-alert(1`${score}`);
+alert(`${score}`);
 
 
 
