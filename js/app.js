@@ -3,14 +3,15 @@
 console.log('hey world');
 let score = 0;
 
-function userName(){
+function userNameAsk(){
 
   let userName = prompt('What is your name?');
   /* console.log(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`); */
   alert(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`);
+  return userName;
 }
 
-userName();
+let userName = userNameAsk();
 
 function questionOne(){
   let questionOne = prompt('Do I have a dog?').toLowerCase();
@@ -32,6 +33,7 @@ function questionTwo(){
     alert(`You are not paying attention ${userName}!`);
   } else if(questionTwo === 'n' || questionTwo === 'no') {
     alert(`You are right ${userName}!`);
+    score++;
   }
 }
 
@@ -44,6 +46,7 @@ function questionThree(){
     alert(`You might want to read my biography again ${userName}!`);
   } else if(questionThree === 'n' || questionThree === 'no') {
     alert(`That is correct ${userName}!`);
+    score++;
   }
 }
 
@@ -54,6 +57,7 @@ function questionFour(){
   // console.log(`That is right ${userName}!`); //
   if(questionFour === 'y' || questionFour === 'yes') {
     alert(`That is right ${userName}!`);
+    score++;
   } else if(questionFour === 'n' || questionFour === 'no') {
     alert(`I'm sorry, that is wrong ${userName}.`);
   }
@@ -66,6 +70,7 @@ function questionFive(){
   // console.log(`You are paying attention ${userName}!`); //
   if(questionFive === 'y' || questionFive === 'yes') {
     alert(`You are paying attention ${userName}!`);
+    score++;
   } else if(questionFive === 'n' || questionFive === 'no') {
     alert(`That is not correct ${userName}!`);
   } else{
@@ -79,18 +84,20 @@ questionFive();
 
 function questionSix(){
   let myNum = 7;
+  console.log(myNum);
   let questionSix = +prompt('Guess a number between 1-20');
-
+  //console.log(questionSix);
   for(let i=0;i<4;i++){
     if(questionSix === myNum){
       alert(`You guessed correctly ${userName}!`);
+      score++;
       break;
     } else if(questionSix < myNum){
       alert(`Your guess is too low ${userName}. Try again`);
-      questionSix = prompt('Guess a number between 1-20');
+      questionSix = +prompt('Guess a number between 1-20');
     } else{
       alert(`Your guess is too high ${userName}! Try Again`);
-      questionSix = prompt('Guess a number between 1-20');
+      questionSix = +prompt('Guess a number between 1-20');
     }
   }
 }
@@ -121,6 +128,7 @@ function questionSeven(){
     alert('These are the possible answers: pizza, snacks or brunch');
   } else{
     alert(`That's right ${userName}!`);
+    score++;
   }
 }
 
