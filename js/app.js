@@ -7,20 +7,35 @@ function userNameAsk(){
 
   let userName = prompt('What is your name?');
   /* console.log(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`); */
-  alert(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`);
-  return userName;
+  /*alert(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`);*/
+  
+ /* userName != '' ? alert(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`) : alert("name cannot be blank!");
+  userName;
+  
 }
+*/
+
+userName == '' ? alert("name cannot be blank!")
+: alert(`Welcome to my site ${userName}! Please answer the following questions with a yes or no.`);
+return userName;
+} 
 
 let userName = userNameAsk();
 
 function questionOne(){
   let questionOne = prompt('Do I have a dog?').toLowerCase();
   // console.log(`That's right ${userName}!`); //
+  
+  // questionOne === 'y' || questionOne === 'yes' ? alert(`That's right ${userName}!`) : questionOne === 'n' || questionOne === 'no' ? alert(`Sorry ${userName}, that is wrong.`);
+  
   if(questionOne === 'y' || questionOne === 'yes') {
     alert(`That's right ${userName}!`);
   } else if(questionOne === 'n' || questionOne === 'no') {
     alert(`Sorry ${userName}, that is wrong.`);
-  } 
+  } else{
+    alert(`Please answer the question ${userName}.`);
+    questionOne = prompt('Do I have a dog?').toLowerCase();
+  }
 }
 
 questionOne();
@@ -34,6 +49,9 @@ function questionTwo(){
   } else if(questionTwo === 'n' || questionTwo === 'no') {
     alert(`You are right ${userName}!`);
     score++;
+  } else{
+    alert(`Please answer the question ${userName}.`);
+    questionTwo = prompt(`Was I born in the United States ${userName}?`).toLowerCase();
   }
 }
 
@@ -47,6 +65,9 @@ function questionThree(){
   } else if(questionThree === 'n' || questionThree === 'no') {
     alert(`That is correct ${userName}!`);
     score++;
+  } else{
+    alert(`Please answer the question ${userName}.`);
+    questionThree = prompt(`Is English my first language ${userName}?`).toLowerCase();
   }
 }
 
@@ -60,6 +81,9 @@ function questionFour(){
     score++;
   } else if(questionFour === 'n' || questionFour === 'no') {
     alert(`I'm sorry, that is wrong ${userName}.`);
+  } else{
+    alert(`Please answer the question ${userName}.`);
+    questionFour = prompt(`Have I been outside the United States ${userName}?`).toLowerCase();
   }
 }
 
@@ -110,7 +134,7 @@ questionSix();
 
 function questionSeven(){
   let myFavorite = ['pizza', 'snacks', 'brunch'];
-  let guesses = 6;
+  //let guesses = 6;//
   let questionSeven = '';
   let isCorrect = false;
   for(let i = 0;i<6;i++){
