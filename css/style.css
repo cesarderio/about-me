@@ -1,24 +1,36 @@
-body{
-  background-color: rgba(83, 178, 164, 0.557);
-}
-p {
-  text-align: center;
-  align-self: center;
-  display: block; 
-  margin-top: 40px;
-  margin-left: auto;  
-  margin-right: auto;
-  border: 70px, 70px; 
-  padding: auto;
-  max-width: 900px;
-}
-h1 {
-  text-align: center;
-  font-size:5vw;
+
+body {
+  background-color: rgba(51, 116, 237, 0.815);
 }
 
+section.top {
+  border: 1vw solid;
+  background-color: rgba(247, 70, 70, 0.728);
+  padding-bottom: 20px;
+}
 div {
-  margin: 50px 50px;
+  background-color: ;
+}
+
+p {
+  color: rgb(3, 9, 122);
+  align-self: center;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 2vw;
+  
+}
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 li {
@@ -26,15 +38,53 @@ li {
 }
 ul {
   list-style-type: circle;
+  font-size: 1.5vw;
 }
 ol {
   list-style-type: decimal;
+  font-size: 1.5vw;
 }
+
+
+
 .expr {
+  margin-top: 100px;
+  margin-left: 10vw;
   float: left;
- 
+  position: ;
 }
+
 .Artists {
+  margin-top: 100px;
+  margin-right: 10vw;
   float: right;
 }
 
+
+footer {
+  align-self: center;
+  margin-bottom: 2vw;
+}
+/*
+.expr {
+  border: 7px solid;
+  background-color: rgba(243, 96, 96, 0.63);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 20px;
+  position: relative;
+  text-align: center;
+}
+.Artists {
+  border: 7px solid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(241, 116, 116, 0.428);
+  position: relative;
+  border-top: 50px;
+  text-align: center;
+}
+.Artists ol {
+  list-style-type: decimal;
+  font-size: 1.5vw;
+}

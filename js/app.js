@@ -156,4 +156,4 @@ function questionSeven(){
   }
 }
 questionSeven();
-alert(`Great job! Your score is ${score}`);
+alert(`Great job! Your score is ${score}!`);
