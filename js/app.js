@@ -126,6 +126,9 @@ function questionSix(){
     } 
     questionSix = +prompt('Guess a number between 1-20');
   }
+  if(questionSix !== myNum) {
+    alert(`Nice try ${userName}! The correct number is 7!`);
+  }
 }
 questionSix();
 
